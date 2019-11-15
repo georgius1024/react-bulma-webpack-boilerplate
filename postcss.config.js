@@ -7,16 +7,22 @@ const paths = {
   public: path.join(__dirname, 'public')
 }
 
-
-module.exports = {
-  plugins: [
+module.exports = ({ webpack }) => {
+  const mode = webpack.mode
+  const plugins = [
     require('postcss-import')(),
     require('postcss-preset-env')({
       autoprefixer: { grid: true }
-    }),
-    purgecss({
-      content: glob.sync([`${paths.src}/**/*`, `${paths.public}/**/*`], { nodir: true })
     })
-
   ]
+  if (mode !== 'development') {
+    plugins.push(
+      purgecss({
+        content: glob.sync([`${paths.src}/**/*`, `${paths.public}/**/*`], { nodir: true })
+      })
+    )
+  }
+  return {
+    plugins
+  }
 }

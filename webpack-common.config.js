@@ -6,7 +6,7 @@ const paths = {
   src: path.join(__dirname, 'src'),
   public: path.join(__dirname, 'public')
 }
-module.exports = (env) => ({
+module.exports = env => ({
   entry: {
     index: './src/index.js',
     vendor: ['react', 'react-dom']
@@ -41,7 +41,7 @@ module.exports = (env) => ({
           {
             loader: MiniCssExtractPlugin.loader,
             options: {
-              hmr: env !== 'production',
+              hmr: env !== 'production'
             }
           },
           {

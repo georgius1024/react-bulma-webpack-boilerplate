@@ -2,21 +2,14 @@
 
 exports[`App component Mounts without error 1`] = `
 <div
-  className="text-center font-sans"
+  className="columns full-height is-mobile is-vcentered"
 >
-  <header
-    className="bg-gray-600 m-6 p-6 rounded shadow-lg"
+  <div
+    className="column  is-half-desktop is-offset-one-quarter-desktop  is-three-fifths-tablet is-offset-one-fifth-tablet  has-background-dark has-text-grey-lighter is-size-3 has-text-centered"
   >
-    <h1
-      className="text-white text-3xl"
-    >
-      This is a React app
-    </h1>
-  </header>
-  <p
-    className="text-base"
-  >
-    This app has been build using React & TypeScript
-  </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae autem reprehenderit asperiores provident doloribus, sint numquam eaque obcaecati harum, minus labore fugit officia in assumenda debitis id quidem. Nulla, fugit!
+    </p>
+  </div>
 </div>
 `;

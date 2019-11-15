@@ -1,28 +1,27 @@
 import * as React from 'react'
 import styles from './css/app.module.scss'
+import Login from './views/Login'
 const App = () => {
+  return <Login />
   return (
     <>
       <section className="hero is-primary is-halfheight">
         <div className="hero-body">
           <div className="container">
-            <h1 className="title">
-              Halfheight title
-            </h1>
-            <h2 className="subtitle">
-              Fullheight subtitle
-            </h2>
+            <h1 className="title">Halfheight title</h1>
+            <h2 className="subtitle">Fullheight subtitle</h2>
           </div>
         </div>
       </section>
       <section>
         <div className="container has-margin-top-15">
-          <h1 className="title">
-            Bulma
-          </h1>
+          <h1 className="title">Bulma</h1>
           <p className={styles['title-x']}>!!!</p>
           <p className="subtitle">
-            Modern CSS framework based on <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">Flexbox</a>
+            Modern CSS framework based on{' '}
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">
+              Flexbox
+            </a>
           </p>
 
           <div className="field">

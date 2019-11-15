@@ -1,8 +1,8 @@
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
-const RobotstxtPlugin = require('robotstxt-webpack-plugin');
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const RobotstxtPlugin = require('robotstxt-webpack-plugin')
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
 module.exports = () => ({
   output: {
@@ -12,7 +12,7 @@ module.exports = () => ({
   },
   plugins: [
     new CleanWebpackPlugin(),
-  new RobotstxtPlugin({}),
+    new RobotstxtPlugin({}),
     new BundleAnalyzerPlugin({
       analyzerMode: 'static',
       openAnalyzer: false

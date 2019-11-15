@@ -57,6 +57,7 @@
     "bulma": "^0.8.0",
     "bulma-helpers": "^0.3.8",
     "react": "^16.10.2",
-    "react-dom": "^16.10.2"
+    "react-dom": "^16.10.2",
+    "react-router-dom": "^5.1.2"
   }
 }
